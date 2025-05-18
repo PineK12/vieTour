@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết Tour</title>
+    <link rel="stylesheet" href="style-tour-plan.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">vieTour</div>
+            <nav class="nav">
+                <a href="/index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Upcomming Packages</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero">
+        <img src="./imgs/cloud.png" alt="Banner" class="banner-img">
+        <div class="overlay">
+            <p class="sub-title">EXPLORE</p>
+            <h1 class="title">Landscapes</h1>
+        </div>
+    </section>
+
+    <!-- Thông tin tour -->
+    <section class="tour-options">
+        <div class="option">
+            <a href="info.html">
+                <img src="./imgs/info.png" alt="Information Icon" class="icon-img" />
+                <span>Information</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="tour-plan.html">
+                <img src="./imgs/calendary.png" alt="Tour Plan Icon" class="icon-img" />
+                <span>Tour Plan</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="location.html">
+                <img src="./imgs/location.png" alt="Location Icon" class="icon-img" />
+                <span>Location</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="gallery.html">
+                <img src="./imgs/galery.png" alt="Gallery Icon" class="icon-img" />
+                <span>Gallery</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="tour-detail">
+        <div class="container-tour">
+            <div class="tour-plan">
+                <h2 class="tour-title">Tour Plan</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-day="01">
+                        <h3>Day 1: Departure</h3>
+                        <p>Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et Voluptates Officia Sed
+                            Molestiae Sint Et Voluptas Quos.</p>
+                        <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item" data-day="02">
+                        <h3>Day 2: Visiting Zurich, Geneva And Zermatt</h3>
+                        <p>Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa
+                            Quis Enim.</p>
+                        <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item" data-day="03">
+                        <h3>Day 3: Rest</h3>
+                        <p>Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus
+                            Ut, Imperdiet.</p>
+                        <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item" data-day="04">
+                        <h3>Day 4: Historical Tour</h3>
+                        <p>Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus
+                            Ut, Imperdiet.</p>
+                        <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item" data-day="05">
+                        <h3>Day 5: Return</h3>
+                        <p>After a memorable journey, it’s time to head back home with wonderful memories and new
+                            friendships. Breakfast is included before departure.</p>
+                        <ul>
+                            <li>Breakfast</li>
+                            <li>Airport Transfer</li>
+                            <li>Farewell Gift</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="tour-right">
+                <div class="booking-box">
+                    <h3>Book This Tour</h3>
+                    <p>Experience a smooth and safe overnight journey to Sapa with HK Busline. Reserve your sleeper seat
+                        today!</p>
+                    <form class="booking-form">
+                        <input type="text" placeholder="Name" required />
+                        <input type="email" placeholder="Email" required />
+                        <input type="email" placeholder="Confirm Email" required />
+                        <input type="tel" placeholder="Phone" required />
+                        <input type="text" placeholder="dd-mm-yy" required />
+                        <input type="number" placeholder="Number of ticket" min="1" required />
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit" class="btn-orange">Check Availability</button>
+                        <button type="submit" class="btn-red"
+                            onclick="if(confirm('Are you sure you want to confirm this booking?')) { window.location.href = '../User/user.html' }">Book
+                            Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>vieTour</h2>
+                <p>vieTour mang đến sự thoải mái, vui vẻ qua những chuyến đi.</p>
+                <div class="socials">
+                    <a href="#">in</a>
+                    <a href="#">✉️</a>
+                    <a href="#">🐦</a>
+                    <a href="#">∞</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Thông tin</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản và dịch vụ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li>📞 +0909099900</li>
+                    <li>📧 vietour.flora@.com</li>
+                    <li>📍 Cao Lỗ, Q.8, TPHCM</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Nổi bật</h4>
+                <div class="gallery">
+                    <img src="./imgs/da-lat.png" alt="">
+                    <img src="./imgs/choc-troi.png" alt="">
+                    <img src="./imgs/cau-rong.png" alt="">
+                    <img src="./imgs/phu-quoc.png" alt="">
+                    <img src="./imgs/ha-giang.png" alt="">
+                    <img src="./imgs/ho-con-rua.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.tidio.co/h4brmf1uh0k4z5rtalzjk3n6qipqredi.js" async></script>
+</body>
+
+</html>

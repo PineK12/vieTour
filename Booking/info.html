@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết Tour</title>
+    <link rel="stylesheet" href="style-booking.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">vieTour</div>
+            <nav class="nav">
+                <a href="/index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Upcomming Packages</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero">
+        <img src="./imgs/cloud.png" alt="Banner" class="banner-img">
+        <div class="overlay">
+            <p class="sub-title">EXPLORE</p>
+            <h1 class="title">Landscapes</h1>
+        </div>
+    </section>
+
+    <!-- Thông tin tour -->
+    <section class="tour-options">
+        <div class="option">
+            <a href="info.html">
+                <img src="./imgs/info.png" alt="Information Icon" class="icon-img" />
+                <span>Information</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="tour-plan.html">
+                <img src="./imgs/calendary.png" alt="Tour Plan Icon" class="icon-img" />
+                <span>Tour Plan</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="location.html">
+                <img src="./imgs/location.png" alt="Location Icon" class="icon-img" />
+                <span>Location</span>
+            </a>
+        </div>
+        <div class="option">
+            <a href="gallery.html">
+                <img src="./imgs/galery.png" alt="Gallery Icon" class="icon-img" />
+                <span>Gallery</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="tour-detail">
+        <div class="container-tour">
+            <div class="tour-left">
+                <h2><span style="color: #1a1a8a;">Hanoi - Sapa Sleeper Bus</span> <span
+                        style="color: #e94e1b; font-weight: bold;">400.000 ₫</span> <small>/ Per Person</small></h2>
+                <p><strong>★★★★★</strong> <span style="color: gray;">(1.2k review)</span></p>
+                <p>Enjoy a comfortable and relaxing overnight journey from Hanoi to Sapa with the high-quality HK
+                    Busline sleeper bus service. Each bus is equipped with spacious reclining beds that allow you to lie
+                    back and rest throughout the entire trip. The interior is clean, well-maintained, and designed to
+                    provide maximum comfort during long-distance travel.
+
+                    Operated by a team of experienced and professional drivers, HK Busline prioritizes your safety and
+                    ensures a smooth, punctual ride. Onboard amenities may include blankets, free drinking water, USB
+                    charging ports, stable air conditioning, and even Wi-Fi on selected buses, making your journey even
+                    more pleasant and convenient.
+
+                    This service is ideal for solo travelers, groups of friends, and families who want to save on
+                    accommodation by traveling overnight. Whether you're heading to Sapa for trekking adventures or a
+                    peaceful getaway, HK Busline offers a reliable and hassle-free option for reaching your destination.
+
+                    Easy booking, attentive service, and comfortable travel—HK Busline promises a restful and enjoyable
+                    start to your Sapa trip.
+
+                    “Wake up refreshed and ready to explore the stunning landscapes of Sapa as soon as you arrive.”</p>
+
+                <ul class="tour-info">
+                    <li><strong>Destination</strong>: Sapa, Lao Cai</li>
+                    <li><strong>Departure</strong>: My Dinh Bus Station, Hanoi</li>
+                    <li><strong>Departure Time</strong>: 10:00 PM</li>
+                    <li><strong>Return Time</strong>: 04:30 AM (next day)</li>
+                    <li><strong>Dress Code</strong>: Casual and comfortable for sleeping</li>
+                    <li><strong>Not Included</strong>: ❌ Meals, ❌ Local Tours</li>
+                    <li><strong>Included</strong>: ✅ Reclining Sleeper Seat, ✅ Blanket & Pillow, ✅ Bottled Water</li>
+                </ul>
+            </div>
+
+            <div class="tour-right">
+                <div class="booking-box">
+                    <h3>Book This Tour</h3>
+                    <p>Experience a smooth and safe overnight journey to Sapa with HK Busline. Reserve your sleeper seat
+                        today!</p>
+                    <form class="booking-form">
+                        <input type="text" placeholder="Name" required />
+                        <input type="email" placeholder="Email" required />
+                        <input type="email" placeholder="Confirm Email" required />
+                        <input type="tel" placeholder="Phone" required />
+                        <input type="text" placeholder="dd-mm-yy" required />
+                        <input type="number" placeholder="Number of ticket" min="1" required />
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit" class="btn-orange">Check Availability</button>
+                        <button type="submit" class="btn-red"
+                            onclick="if(confirm('Are you sure you want to confirm this booking?')) { window.location.href = '../User/user.html' }">Book
+                            Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container-gallery" style="display: flex; flex-wrap: wrap; align-items: flex-start;">
+            <!-- Left: Text and gallery -->
+            <div class="gallery-left" style="flex: 1; min-width: 300px;">
+                <h2 style="font-size: 2rem; font-weight: bold; color: #1a1a8a;">From our gallery</h2>
+                <p style="max-width: 550px; margin-bottom: 20px;">
+                    Nestled in the northern highlands of Vietnam, Sapa is renowned for its breathtaking natural
+                    beauty—rolling terraced rice fields, mist-covered valleys, and majestic mountains that stretch
+                    as far as the eye can see. This charming town is also home to vibrant ethnic minority communities,
+                    offering visitors a unique blend of culture, tradition, and stunning scenery. Whether you're
+                    trekking
+                    through lush trails, visiting local markets, or simply enjoying the cool mountain air, Sapa promises
+                    an
+                    unforgettable escape into nature.
+                </p>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                    <img src="./imgs/sp1.png" alt="Gallery Image 1" style="width: 100%; height: auto;" />
+                    <img src="./imgs/sp2.png" alt="Gallery Image 2" style="width: 100%; height: auto;" />
+                    <img src="./imgs/sp3.png" alt="Gallery Image 3" style="width: 100%; height: auto;" />
+                    <img src="./imgs/sp4.png" alt="Gallery Image 4" style="width: 100%; height: auto;" />
+                    <img src="./imgs/sp5.png" alt="Gallery Image 5" style="width: 100%; height: auto;" />
+                    <img src="./imgs/sp6.png" alt="Gallery Image 6" style="width: 100%; height: auto;" />
+                </div>
+            </div>
+
+            <!-- Right: Decorative image -->
+            <div class="gallery-right"
+                style="flex: 1; min-width: 250px; display: flex; justify-content: center; align-items: center;">
+                <img src="./imgs/right.png" alt="Travel Decoration" style="max-width: 100%; height: auto;" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>vieTour</h2>
+                <p>vieTour mang đến sự thoải mái, vui vẻ qua những chuyến đi.</p>
+                <div class="socials">
+                    <a href="#">in</a>
+                    <a href="#">✉️</a>
+                    <a href="#">🐦</a>
+                    <a href="#">∞</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Thông tin</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản và dịch vụ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li>📞 +0909099900</li>
+                    <li>📧 vietour.flora@.com</li>
+                    <li>📍 Cao Lỗ, Q.8, TPHCM</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Nổi bật</h4>
+                <div class="gallery">
+                    <img src="./imgs/da-lat.png" alt="">
+                    <img src="./imgs/choc-troi.png" alt="">
+                    <img src="./imgs/cau-rong.png" alt="">
+                    <img src="./imgs/phu-quoc.png" alt="">
+                    <img src="./imgs/ha-giang.png" alt="">
+                    <img src="./imgs/ho-con-rua.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.tidio.co/h4brmf1uh0k4z5rtalzjk3n6qipqredi.js" async></script>
+</body>
+
+</html>

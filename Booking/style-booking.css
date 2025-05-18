@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e293b;
+  position: relative;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  border-bottom: 2px solid #f87171;
+  border-left: 2px solid #f87171;
+  border-radius: 0 0 0 20px;
+  bottom: -10px;
+  left: -10px;
+  transform: rotate(-15deg);
+}
+
+.nav a {
+  margin: 0 15px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.btn {
+  background: #ff6e40;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero Banner */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.overlay .sub-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.overlay .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* Tour Options */
+.tour-options {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  /* giữ chiều cao đều giữa các option */
+  background: #efeded;
+  padding: 30px 0;
+  margin-top: -40px;
+  z-index: 5;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.option {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  border-right: 1px solid #eee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e6f3ff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.option:hover {
+  background-color: #d4eaff;
+}
+
+.option:last-child {
+  border-right: none;
+}
+
+
+.icon-img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.container-tour {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tour-left {
+  width: 60%;
+  line-height: 1.8;
+}
+
+.tour-left h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.tour-info {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.tour-info li {
+  margin-bottom: 10px;
+}
+
+.tour-right {
+  width: 35%;
+}
+
+.booking-box {
+  border: 2px solid #2196F3;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.booking-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1a1a8a;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.booking-form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.btn-orange,
+.btn-red {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-orange {
+  background-color: #e67e22;
+}
+
+.btn-red {
+  background-color: #e74c3c;
+}
+
+.gallery-section {
+  margin-left: 50px;
+}
+
+/* --- Footer --- */
+.footer {
+  background: #f7f7f7;
+  padding: 60px 20px;
+  height: 350px;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #0f2c44;
+}
+
+.footer-brand .arrow {
+  color: #ff6e40;
+  font-size: 24px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #555;
+  max-width: 250px;
+}
+
+.socials {
+  margin-top: 12px;
+}
+
+.socials a {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #0f2c44;
+  text-decoration: none;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #0f2c44;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-column ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #ff6e40;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 6px;
+}
+
+.gallery img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}

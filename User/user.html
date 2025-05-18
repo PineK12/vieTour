@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yêu thích</title>
+    <link rel="stylesheet" href="style-user.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">vieTour</div>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+
+    <h1 class="page-title">Yêu thích</h1>
+
+    <section class="container">
+        <aside class="sidebar">
+            <img src="./imgs/avt.png" alt="Avatar">
+            <h3>Thành Tài</h3>
+            <ul>
+                <li><i class="fa-regular fa-user"></i> Thông tin tài khoản</li>
+                <li><i class="fa-solid fa-clock-rotate-left"></i> Lịch sử chuyến đi</li>
+                <li class="active"><i class="fa-solid fa-heart"></i> Yêu thích</li>
+                <li><i class="fa-solid fa-gear"></i> Cài đặt</li>
+            </ul>
+        </aside>
+
+        <div class="main-content">
+            <!-- Lặp tour-card để hiển thị nhiều mục -->
+            <a href="../Booking/info.html" class="tour-link">
+                <div class="tour-card">
+                    <img src="./imgs/dak-lak.png" alt="Tour image">
+                    <div class="tour-info">
+                        <h4>Hà Nội - Sapa Sleeper Bus by HK Busline</h4>
+                        <div class="price">Từ ₫ 400.000</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Thêm nhiều thẻ .tour-card nếu cần -->
+        </div>
+    </section>
+
+    <div class="pagination">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>vieTour</h2>
+                <p>vieTour mang đến sự thoải mái, vui vẻ qua những chuyến đi.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Thông tin</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản và dịch vụ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> 0909099900</li>
+                    <li><i class="fa-solid fa-envelope"></i> vietour.fiora@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Cao Lỗ, Q.8, TPHCM</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Nổi bật</h4>
+                <div class="gallery">
+                    <img src="./imgs/cau-rong.png" alt="" />
+                    <img src="./imgs/choc-troi.png" alt="" />
+                    <img src="./imgs/da-lat.png" alt="" />
+                    <img src="./imgs/dak-lak.png" alt="" />
+                    <img src="./imgs/ha-giang.png" alt="" />
+                    <img src="./imgs/ho-con-rua.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.tidio.co/h4brmf1uh0k4z5rtalzjk3n6qipqredi.js" async></script>
+</body>
+
+</html>
